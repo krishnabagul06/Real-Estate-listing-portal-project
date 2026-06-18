@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listing Portal | From Search to Settlement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-house-signal"></i> 
+                RealEstate<span>Hub</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Buy</a>
+                <a href="#">Rent</a>
+                <a href="#">Sell</a>
+                <a href="#">Agents</a>
+            </div>
+            <div class="nav-actions">
+                <a href="auth.html" class="btn-ghost" style="display:inline-flex; align-items:center;">Log In</a>
+                <a href="auth.html" class="btn-primary" style="display:inline-flex; align-items:center;">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>From Search to Settlement <br> <span>Everything in One Place.</span></h1>
+            <p>Discover your dream home with interactive maps, virtual tours, and direct agent communication.</p>
+            
+            <!-- Search Widget -->
+            <div class="search-widget glass-panel">
+                <div class="search-tabs">
+                    <button class="tab active">Buy</button>
+                    <button class="tab">Rent</button>
+                    <button class="tab">Sold</button>
+                </div>
+                <div class="search-inputs">
+                    <div class="input-group">
+                        <label>Location</label>
+                        <input type="text" placeholder="City, Neighborhood, or ZIP">
+                    </div>
+                    <div class="input-group">
+                        <label>Property Type</label>
+                        <select>
+                            <option>All Types</option>
+                            <option>Houses</option>
+                            <option>Apartments</option>
+                            <option>Condos</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Price Range</label>
+                        <select>
+                            <option>Any Price</option>
+                            <option>$100k - $300k</option>
+                            <option>$300k - $500k</option>
+                            <option>$500k - $1M</option>
+                            <option>$1M+</option>
+                        </select>
+                    </div>
+                    <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Overview -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Platform</h2>
+                <p>We provide a centralized platform with advanced technology to simplify your real estate journey.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3>Interactive Maps</h3>
+                    <p>Search properties geographically and explore nearby amenities like schools and hospitals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+                    <h3>Virtual Tours</h3>
+                    <p>Take immersive remote tours of properties before deciding to make an in-person visit.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <h3>Mortgage Calculator</h3>
+                    <p>Estimate your monthly loan payments easily with our integrated financial tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Direct Agent Chat</h3>
+                    <p>Communicate in real-time with verified real estate agents for instant query resolution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Listings</h2>
+                <p>Explore some of our most premium and newly listed properties.</p>
+            </div>
+            
+            <div class="property-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern House">
+                        <span class="badge badge-featured">Featured</span>
+                        <span class="badge badge-vr"><i class="fa-solid fa-vr-cardboard"></i> 3D Tour</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="price">$1,250,000</div>
+                        <h3 class="title"><a href="#">Beverly Hills Modern Mansion</a></h3>
+                        <p class="address"><i class="fa-solid fa-location-dot"></i> 123 Palm Avenue, Los Angeles, CA</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 3,500 sqft</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="agent">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Agent">
+                                <span>Michael Scott</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Condo">
+                        <span class="badge badge-new">New</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="price">$850,000</div>
+                        <h3 class="title"><a href="#">Downtown Luxury Penthouse</a></h3>
+                        <p class="address"><i class="fa-solid fa-location-dot"></i> 45 Skyline Blvd, Seattle, WA</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 2,100 sqft</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="agent">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Agent">
+                                <span>Sarah Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suburban Home">
+                        <span class="badge badge-vr"><i class="fa-solid fa-vr-cardboard"></i> 3D Tour</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="price">$520,000</div>
+                        <h3 class="title"><a href="#">Cozy Suburban Family Home</a></h3>
+                        <p class="address"><i class="fa-solid fa-location-dot"></i> 789 Maple Street, Austin, TX</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 2.5 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 2,800 sqft</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="agent">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Agent">
+                                <span>David Chen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="#" class="btn-secondary" style="display:inline-block; text-decoration:none;">View All Properties <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mortgage Calculator Teaser -->
+    <section class="calculator-teaser">
+        <div class="container">
+            <div class="calc-box">
+                <div class="calc-text">
+                    <h2>Plan Your Finances</h2>
+                    <p>Not sure how much you can afford? Use our intelligent mortgage calculator to estimate your monthly payments, interest rates, and down payment requirements.</p>
+                    <a href="#" class="btn-primary" style="display:inline-block; text-decoration:none;">Open Calculator</a>
+                </div>
+                <div class="calc-image">
+                    <div class="mockup-card">
+                        <div class="mockup-header">Mortgage Estimate</div>
+                        <div class="mockup-price">$2,450<span>/mo</span></div>
+                        <div class="mockup-bars">
+                            <div class="bar" style="width: 70%; background: var(--primary);"></div>
+                            <div class="bar" style="width: 20%; background: var(--accent);"></div>
+                            <div class="bar" style="width: 10%; background: #94a3b8;"></div>
+                        </div>
+                        <div class="mockup-legend">
+                            <span><i class="fa-solid fa-circle" style="color: var(--primary);"></i> Principal & Interest</span>
+                            <span><i class="fa-solid fa-circle" style="color: var(--accent);"></i> Taxes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-house-signal"></i> 
+                    RealEstate<span>Hub</span>
+                </a>
+                <p>Your one-stop destination for finding, buying, and renting properties with advanced tools and verified agents.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Properties</a>
+                <a href="#">Agents</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Features</h4>
+                <a href="#">Interactive Maps</a>
+                <a href="#">Virtual Tours</a>
+                <a href="#">Mortgage Calculator</a>
+                <a href="#">Saved Searches</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Krishna Bagul</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8962033067</p>
+                <p><i class="fa-solid fa-envelope"></i> support@realestatehub.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 RealEstateHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

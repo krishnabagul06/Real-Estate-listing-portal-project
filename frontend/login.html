@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">       <!-- Allow special charaters to display correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     <!--The webpage adjusts automatically. for all devices -->
+    <title>Log In | RealEstateHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">        <!-- Importing the Outfit font from Google Fonts with various weights for use in the webpage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                    <!-- Font Awesome library for icons, allowing the use of various icons throughout the webpage -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Small Overlay Navbar for Auth Page -->
+    <a href="index.html" class="logo" style="position: absolute; top: 2rem; left: 2rem; z-index: 100; color: white;">      <!-- 1 rem = 16px, so 2rem = 32px. , absolute Allows us to place the logo exactly where we want. -->
+        <i class="fa-solid fa-house-signal"></i> 
+        RealEstate<span>Hub</span>
+    </a>
+
+    <div class="auth-layout">
+        
+        <!-- Left Side Image -->
+        <div class="auth-image">
+            <div class="auth-image-overlay">
+                <div>
+                    <h2>Welcome Home</h2>
+                    <p style="font-size: 1.2rem; opacity: 0.9;">Join the smartest platform to search, view, and buy properties seamlessly.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="auth-form-container">
+            <div class="auth-form">
+                <h2>Sign In</h2>
+                <p>Welcome back! Please enter your details.</p>
+
+                <form>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; font-size: 0.9rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                            <input type="checkbox" style="width: auto;"> Remember me
+                        </label>
+                        <a href="#" style="color: var(--primary); font-weight: 500;">Forgot password?</a>
+                    </div>
+
+                    <button type="button" class="btn-primary" onclick="window.location.href='index.html'">Sign In</button>
+                    
+                    <button type="button" class="btn-secondary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <i class="fa-brands fa-google"></i> Sign in with Google
+                    </button>
+                </form>
+
+                <div class="auth-links">
+                    Don't have an account? <a href="signup.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

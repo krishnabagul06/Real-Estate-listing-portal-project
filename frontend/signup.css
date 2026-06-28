@@ -1,0 +1,106 @@
+/* ===== AUTHENTICATION PAGES CSS ===== */
+
+.auth-layout {
+    display: flex;
+    height: 100vh;
+}
+
+.auth-image {
+    width: 50%;
+    background: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.auth-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.8), rgba(15, 23, 42, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.auth-image-overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.auth-form-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.auth-form h2 {
+    margin-bottom: 0.5rem;
+}
+
+.auth-form p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.auth-form .input-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+}
+
+.auth-form .input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.auth-form .input-group input {
+    border: 1px solid #cbd5e1;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    font-family: inherit;
+}
+
+.auth-form .btn-primary {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.auth-links {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 1.5rem;
+}
+
+.auth-links a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .auth-layout {
+        flex-direction: column;
+    }
+    .auth-image, .auth-form-container {
+        width: 100%;
+    }
+    .auth-image {
+        display: none; 
+    }
+}
